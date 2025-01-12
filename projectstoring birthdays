@@ -1,0 +1,16 @@
+#variable:store values
+name="eshal ruaf"
+birthday=31,"december"
+print("I'm",name,"and my birthday is",birthday)
+name="aizal khan"
+birthday=10,"march"
+print("I'm",name,"and my birthday is",birthday)
+name="eshal khan"
+birthday=4,"december"
+print("I'm",name,"and my birthday is",birthday)
+name="kiran shehzadi"
+birthday=15,"december"
+print("I'm",name,"and my birthday is",birthday)
+name="ibad bin mujahid"
+birthday=6,"december"
+print("I'm",name,"and my birthday is",birthday)
