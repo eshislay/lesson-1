@@ -12,4 +12,12 @@ print("data type of name:",type(name))
 print("data type of age:",type(age))
 print("datatype of weight:",type(weight))
 print("data type is_student:",type(is_student))
+print("After Typecasting") #variable_name = datatype(variable_name)
+weight=int(weight)
+age=str(age)
+print("datatype of age:",type(age))
+print("datatype of weight:",type(weight))
+weight=str(weight)
+print("datatype of weight:",type(weight))
+
 
