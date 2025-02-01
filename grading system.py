@@ -11,16 +11,16 @@ sub5=input("enter marks for first subject:")
 sub5=int(sub5)
 sum=sub1+sub2+sub3+sub4+sub5
 average=sum/5
-print=("everage:",average)
+print("average:",average)
 if average>=90 and average<=100:
-    print=("grade A+")
+    print("grade A+")
 elif average>=80 and average<90:
-    print=("grade A")
+    print("grade A")
 elif average>=70 and average<80:
-    print=("grade B")
+    print("grade B")
 elif average>=60 and average<70:
-    print=("grade C")
+    print("grade C")
 elif average>=50 and average<60:
-    print=("grade D")
+    print("grade D")
 else:
-    print=("grade F")
+    print("grade F")
