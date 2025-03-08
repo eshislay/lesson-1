@@ -1,0 +1,5 @@
+def sum(n1,n2):
+    return n1+n2
+n1=int(input("enter first number:"))
+n2=int(input("enter second number:"))
+print("sum of",n1,"and",n2, "is",sum(n1,n2))
