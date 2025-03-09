@@ -1,5 +1,14 @@
 def sum(n1,n2):
     return n1+n2
+def sub (n1,n2):
+    return n1-n2
+def mul(n1,n2):
+    return n1*n2
+def div(n1,n2):
+    return n1/n2
 n1=int(input("enter first number:"))
 n2=int(input("enter second number:"))
 print("sum of",n1,"and",n2, "is",sum(n1,n2))
+print("sub of",n1,"and",n2, "is",sub(n1,n2))
+print("mul of",n1,"and",n2, "is",mul(n1,n2))
+print("div of",n1,"and",n2, "is",div(n1,n2))
