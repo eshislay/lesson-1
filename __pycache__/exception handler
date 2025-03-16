@@ -1,6 +1,6 @@
 print("exception handler")
 try:
-    print("x:",y)
+    print("x:",y) # type: ignore
 except:
     print("an exception occurred")
 finally:
