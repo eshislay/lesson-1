@@ -1,0 +1,7 @@
+print("exception handler")
+try:
+    print("x:",y)
+except:
+    print("an exception occurred")
+finally:
+    print("will execute no matter what!")
