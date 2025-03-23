@@ -1,0 +1,7 @@
+import calendar
+# get all months name
+months= list(calendar.month_name)
+months= months[1:]
+# print the months name
+for month in months:
+    print(month)
