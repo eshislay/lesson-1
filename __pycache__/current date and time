@@ -1,0 +1,9 @@
+from datetime import date,time,datetime
+today = datetime.now()
+print("current date time:",today)
+date=date.today()
+print("today's date:",date)
+print("date component's:")
+print("today's date:",date.day)
+print("today's month:",date.month)
+print("today's year:",date.year)
