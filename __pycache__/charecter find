@@ -1,0 +1,8 @@
+# Check if a character is an alphabet, digit, or neither
+ch = input("Enter any character: ")
+if ch.isalpha():
+    print("Character is an alphabet")
+elif ch.isdigit():
+    print("Character is a digit")
+else:
+    print("Character is neither an alphabet nor a digit")
