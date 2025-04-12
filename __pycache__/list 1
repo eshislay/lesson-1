@@ -1,0 +1,19 @@
+print("list and its operation")
+number_list=[1,2,3,5]
+print(number_list)
+string_list=['a','b','c','d']
+print(string_list)
+mixed_list=[1,2,3,'a','b','c']
+print(mixed_list)
+print("size list1:",len(number_list))
+print("size list2:",len(string_list))
+print("size list2:",len(mixed_list))
+print("first element of list1:",number_list[0])
+print("first element of list2:",string_list[0])
+print("first element of list3:",mixed_list[0])
+print("Last element of list1:",number_list[-1])
+print("Last element of list2:",string_list[-1])
+print("Last element of list3:",mixed_list[-1])
+print("slicing:",number_list[1:3])
+print("slicing:",string_list[1:3])
+print("slicing:",mixed_list[1:4])
