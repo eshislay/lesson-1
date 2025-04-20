@@ -1,0 +1,6 @@
+print("tuple product.....")
+numbers=(2,3,4,5)
+product=1
+for num in numbers:
+   product*= num
+print("the product of the tuple is:", product)
