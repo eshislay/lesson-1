@@ -30,3 +30,16 @@ for i in (b):
 print()
 print("access element is:", a[0])
 print("access element is:", b[2])
+import array as arr
+
+# Create an integer array
+array_num = arr.array('i', [1, 3, 5, 3, 7, 9, 3])
+print(f"Original array: {array_num}")
+
+# Count occurrences of a specific number
+count_3 = array_num.count(3)
+print(f"Number of occurrences of the number 3: {count_3}")
+
+# Reverse the array
+array_num.reverse()
+print("Reversed array:", array_num)
