@@ -22,3 +22,11 @@ print()
 # inserting an element into the first array
 a.insert(1, 4)
 print()
+#adding an element using append()
+b.append(4.4)
+print("\n array after intersection: ",end="")
+for i in (b):
+    print(i, end="")
+print()
+print("access element is:", a[0])
+print("access element is:", b[2])
