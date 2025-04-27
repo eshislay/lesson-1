@@ -1,0 +1,11 @@
+# Using map and lambda to add two lists element-wise
+list1 = [1, 2, 3, 4]
+list2 = [10, 20, 30, 40]
+
+result = list(map(lambda x, y: x + y, list1, list2))
+print("Added Lists:", result)
+
+# Using map and lambda to compute squares of numbers in a list
+numbers = [2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x ** 2, numbers))
+print("Squared Numbers:", squared_numbers)
