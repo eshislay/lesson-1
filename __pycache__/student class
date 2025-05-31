@@ -1,0 +1,12 @@
+# Define a class
+class Student:
+    def __init__(self, grade):
+        self.grade = grade
+
+    def introduce(self):
+        print(f"Hi, I am a student of grade {self.grade}")
+
+# Create an object of the class
+student1 = Student(10)
+student1.introduce()
+
