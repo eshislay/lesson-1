@@ -1,0 +1,15 @@
+# Take input from user
+num = int(input("Enter a number: "))
+
+# List of all odd numbers under the input value
+odd_numbers = [i for i in range(1, num) if i % 2 != 0]
+
+print("Odd numbers below", num, ":", odd_numbers)
+
+# List of fruits
+fruits = ["apple", "banana", "cherry", "date"]
+
+# Convert first letter of every element to uppercase
+capitalized_fruits = [fruit.capitalize() for fruit in fruits]
+
+print("Capitalized fruit names:", capitalized_fruits)
