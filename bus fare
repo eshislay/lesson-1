@@ -1,0 +1,14 @@
+class Vehicle:
+    def __init__(self, fare_per_km):
+        self.fare_per_km = fare_per_km
+
+class Bus(Vehicle):
+    def __init__(self, fare_per_km, distance):
+        super().__init__(fare_per_km)
+        self.distance = distance
+
+    def calculate_fare(self):
+        return self.fare_per_km * self.distance
+
+bus = Bus(10, 15)  # 10 per km, 15 km
+print("Total Fare:", bus.calculate_fare())
