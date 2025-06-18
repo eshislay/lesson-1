@@ -1,0 +1,19 @@
+class Vehicle:
+    def start(self):
+        raise NotImplementedError("Subclass must implement this method")
+
+class BMW(Vehicle):
+    def start(self):
+        return "BMW engine started."
+
+class Ferrari(Vehicle):
+    def start(self):
+        return "Ferrari engine roars to life!"
+
+def vehicle_start(vehicle):
+    print(vehicle.start())
+
+bmw = BMW()
+ferrari = Ferrari()
+vehicle_start(bmw)
+vehicle_start(ferrari)
