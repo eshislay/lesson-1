@@ -1,0 +1,11 @@
+class ReverseString:
+    def __init__(self, sentence):
+        self.__sentence = sentence  # private attribute
+
+    def reverse_words(self):
+        words = self.__sentence.split()
+        reversed_words = ' '.join(reversed(words))
+        return reversed_words
+
+string_obj = ReverseString("Hello world this is Python")
+print("Reversed:", string_obj.reverse_words())
