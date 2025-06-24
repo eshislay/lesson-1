@@ -1,0 +1,28 @@
+import pygame
+import sys
+
+# Initialize pygame
+pygame.init()
+
+# Set up screen
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption("Space Invader")
+
+# Load background image and sound
+background = pygame.image.load("space_background.jpg")  # Replace with your image filename
+pygame.mixer.music.load("space_theme.mp3")              # Replace with your music file
+pygame.mixer.music.play(-1)  # Loop the music indefinitely
+
+# Game loop
+running = True
+while running:
+    screen.blit(background, (0, 0))  # Draw the background image
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    pygame.display.update()
+
+pygame.quit()
+sys.exit()
