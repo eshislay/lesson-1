@@ -1,0 +1,55 @@
+import pygame
+import sys
+
+# Initialize Pygame
+pygame.init()
+
+# Screen setup
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Two Sprites on Screen")
+
+# Colors
+WHITE = (255, 255, 255)
+BLUE = (0, 128, 255)
+GREEN = (0, 255, 100)
+
+# Clock and speed
+clock = pygame.time.Clock()
+speed = 5
+
+# Player sprite (movable)
+player = pygame.Rect(100, 100, 50, 50)
+
+# Enemy sprite (static)
+enemy = pygame.Rect(500, 300, 60, 60)
+
+# Game loop
+running = True
+while running:
+    screen.fill(WHITE)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Movement controls
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT] and player.left > 0:
+        player.x -= speed
+    if keys[pygame.K_RIGHT] and player.right < WIDTH:
+        player.x += speed
+    if keys[pygame.K_UP] and player.top > 0:
+        player.y -= speed
+    if keys[pygame.K_DOWN] and player.bottom < HEIGHT:
+        player.y += speed
+
+    # Draw sprites
+    pygame.draw.rect(screen, BLUE, player)
+    pygame.draw.rect(screen, GREEN, enemy)
+
+    pygame.display.update()
+    clock.tick(60)
+
+pygame.quit()
+sys.exit()
