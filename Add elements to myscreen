@@ -1,0 +1,39 @@
+import pygame
+import sys
+
+# Initialize Pygame
+pygame.init()
+
+# Set up the screen
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("My First Game Screen")
+
+# Define colors
+WHITE = (255, 255, 255)
+BLUE = (0, 100, 255)
+RED = (255, 0, 0)
+
+# Set up font
+font = pygame.font.SysFont(None, 48)
+text = font.render("Welcome to My Game!", True, WHITE)
+
+# Game loop
+running = True
+while running:
+    screen.fill(BLUE)  # Background color
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Draw a rectangle
+    pygame.draw.rect(screen, RED, (300, 250, 200, 100))  # x, y, width, height
+
+    # Draw text
+    screen.blit(text, (240, 100))  # x, y position
+
+    pygame.display.update()
+
+pygame.quit()
+sys.exit()
